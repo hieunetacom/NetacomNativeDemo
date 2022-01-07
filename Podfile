@@ -8,56 +8,45 @@ inhibit_all_warnings!
 
 # ======================================GROUP PODS==========================================
 
-def rx_pods
+def rx_swift_pods
     pod 'RxSwift', '~> 6.2.0'
     pod 'RxCocoa', '~> 6.2.0'
     pod 'XCoordinator', '~> 2.0'
     pod 'RxGesture', '~> 4.0.2'
-end
-
-def rx_swift_pods
-    pod 'RxSwift', '~> 6.2.0'
     pod 'RxRelay', '~> 6.2.0'
-end
-
-def app_pods
-  # pod 'Firebase/Core'
-  pod 'Firebase/Analytics', '6.21.0'
-  pod 'Firebase/Crashlytics', '6.21.0'
-  # pod 'Firebase/Auth', '6.21.0'
-
-  # Localization 2.0
-  pod 'Localize-Swift', :git => 'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
-
-  # Tracking
-  pod 'FBSDKCoreKit', '8.2.0'
-  pod 'AppsFlyerFramework', '5.2.0'
-  pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => "4.3.1"
-
-  rx_pods
-  rx_swift_pods
-  database_pods
-  secret_pods
-  socket_pods
-  resolver
-  pod 'Carbon', '~> 1.0.0-rc.6'
-  pod 'Kingfisher', '6.1.1'
-  pod 'NetaloSDKs', :git => 'http://gitlab.ecdc.vn/hieubui/NetaloSDKs', branch: 'release1'
-  pod 'NotificationSDK', :git => 'http://gitlab.ecdc.vn/hieubui/NotificationSDK', branch: 'dev'
-  pod 'JitsiMeetSDK', git: 'https://github.com/Netacom-NetAlo/JitsiSDK-iOS.git', branch: 'dev_1.2'
-  pod 'Socket.IO-Client-Swift', '14.0.0'
-  
-  pod 'MessageKit', :git => 'https://github.com/thanhphong-tran/messagekit'
-  pod 'SwiftLinkPreview', :git => 'https://github.com/Netacom-NetAlo/SwiftLinkPreview', branch: 'dev_1.0'
-  pod 'Localize-Swift', :git => 'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
-  pod 'ZIPFoundation', '~> 0.9'
 end
 
 def database_pods
   pod 'RealmSwift', '10.12.0'
-
-  #pod 'NetaloCommonSDK', :git => 'http://gitlab.ecdc.vn/hieubui/NetaloCommonSDK', branch: 'database'
 end
+
+def language_pods
+  # Localization 2.0
+  pod 'Localize-Swift', :git => 'https://github.com/thanhphong-tran/Localize-Swift'
+end
+
+def netalo_pods
+  #switch 1 or 2
+  pod 'NetacomSDKs', :git => 'http://github.com/hieunetacom/NetacomSDKs', branch: 'demo/simulator_v1'
+#  pod 'NetacomSDKs', :git => 'http://github.com/hieunetacom/NetacomSDKs', branch: 'demo/device_v1'
+end
+
+def common_pods
+  pod 'MessageKit', :git => 'https://github.com/thanhphong-tran/messagekit'
+  pod 'SwiftLinkPreview', :git => 'https://github.com/Netacom-NetAlo/SwiftLinkPreview', branch: 'dev_1.0'
+  pod 'Kingfisher', '6.1.1'
+  pod 'JitsiMeetSDK', git: 'https://github.com/Netacom-NetAlo/JitsiSDK-iOS.git', branch: 'dev_1.2'
+  pod 'ZIPFoundation', '~> 0.9'
+end
+
+def tracking_pods
+  pod 'Firebase/Analytics', '6.21.0'
+  pod 'Firebase/Crashlytics', '6.21.0'
+  pod 'FBSDKCoreKit', '8.2.0'
+  pod 'AppsFlyerFramework', '5.2.0'
+  pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => "4.3.1"
+end
+
 
 # Secret chat
 def secret_pods
@@ -82,29 +71,22 @@ def resolver
 end
 
 def component_pods
-  rx_pods
-
-  resolver
   pod 'Carbon', '~> 1.0.0-rc.6'
   pod 'Kingfisher', '6.1.1'
 end
 
-def notification_pods
-  database_pods
-  rx_swift_pods
-  resolver
 
-  pod 'Localize-Swift', :git => 'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
-end
-
-def share_pods
-  database_pods
-  rx_swift_pods
+def app_pods
   resolver
-  pod 'Carbon', '~> 1.0.0-rc.6'
-  pod 'RxCocoa', '~> 6.2.0'
-  pod 'RxGesture', '~> 4.0.2'
-  pod 'Localize-Swift', :git => 'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
+  rx_swift_pods
+  component_pods
+  secret_pods
+  database_pods
+  language_pods
+  tracking_pods
+  socket_pods
+  common_pods
+  netalo_pods
 end
 
 # ======================================TARGET PODS==========================================
@@ -112,6 +94,7 @@ end
 target 'DemoNativeNetaloSDK' do
   app_pods
 end
+
 
 
 # ============================Notification Extension================================

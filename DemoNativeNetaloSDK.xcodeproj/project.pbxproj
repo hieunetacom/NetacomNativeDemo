@@ -14,7 +14,7 @@
 		2FD3FC642786F2D200CB10D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3FC632786F2D200CB10D8 /* Assets.xcassets */; };
 		2FD3FC692786F2F700CB10D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3FC662786F2F700CB10D8 /* GoogleService-Info.plist */; };
 		2FD3FC6B2786F2F700CB10D8 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3FC682786F2F700CB10D8 /* BuildConfig.swift */; };
-		41032C454A72736C0287F7BF /* Pods_DemoNativeNetaloSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB1A0ADD010EC403F8A52FF /* Pods_DemoNativeNetaloSDK.framework */; };
+		480E63796539EABFAF85BB4A /* Pods_DemoNativeNetaloSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375C142BA379E01DB229D87F /* Pods_DemoNativeNetaloSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		181244C93614B532C82C4C80 /* Pods-DemoNativeNetaloSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoNativeNetaloSDK.release.xcconfig"; path = "Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK.release.xcconfig"; sourceTree = "<group>"; };
 		2FD3FC472786F0BC00CB10D8 /* DemoNativeNetaloSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoNativeNetaloSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD3FC4A2786F0BC00CB10D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FD3FC4E2786F0BC00CB10D8 /* DemoSDKVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSDKVC.swift; sourceTree = "<group>"; };
@@ -42,9 +43,8 @@
 		2FD3FC672786F2F700CB10D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD3FC682786F2F700CB10D8 /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
 		2FD3FC6C2786F4E800CB10D8 /* DemoNativeNetaloSDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoNativeNetaloSDK.entitlements; sourceTree = "<group>"; };
-		525059D61618C7E0099C2CDE /* Pods-DemoNativeNetaloSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoNativeNetaloSDK.debug.xcconfig"; path = "Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		C39F83252F5BFD3D57FCB33A /* Pods-DemoNativeNetaloSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoNativeNetaloSDK.release.xcconfig"; path = "Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK.release.xcconfig"; sourceTree = "<group>"; };
-		DEB1A0ADD010EC403F8A52FF /* Pods_DemoNativeNetaloSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoNativeNetaloSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		375C142BA379E01DB229D87F /* Pods_DemoNativeNetaloSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoNativeNetaloSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7201B2297FEFAC0412FAA3 /* Pods-DemoNativeNetaloSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoNativeNetaloSDK.debug.xcconfig"; path = "Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,27 +52,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41032C454A72736C0287F7BF /* Pods_DemoNativeNetaloSDK.framework in Frameworks */,
+				480E63796539EABFAF85BB4A /* Pods_DemoNativeNetaloSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F193EF52787E86500FCA7F7 /* SDKs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SDKs;
-			sourceTree = "<group>";
-		};
 		2FD3FC3E2786F0BC00CB10D8 = {
 			isa = PBXGroup;
 			children = (
 				2FD3FC492786F0BC00CB10D8 /* DemoNativeNetaloSDK */,
 				2FD3FC482786F0BC00CB10D8 /* Products */,
 				81B0C07B56A2E38A1CCF2DA2 /* Pods */,
-				E3C5674DA110F9319F03F477 /* Frameworks */,
+				A8EA9EB16771D3334433712A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +80,6 @@
 		2FD3FC492786F0BC00CB10D8 /* DemoNativeNetaloSDK */ = {
 			isa = PBXGroup;
 			children = (
-				2F193EF52787E86500FCA7F7 /* SDKs */,
 				2FD3FC5E2786F27D00CB10D8 /* Resources */,
 				2FD3FC4A2786F0BC00CB10D8 /* AppDelegate.swift */,
 				2FD3FC4E2786F0BC00CB10D8 /* DemoSDKVC.swift */,
@@ -112,16 +104,16 @@
 		81B0C07B56A2E38A1CCF2DA2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				525059D61618C7E0099C2CDE /* Pods-DemoNativeNetaloSDK.debug.xcconfig */,
-				C39F83252F5BFD3D57FCB33A /* Pods-DemoNativeNetaloSDK.release.xcconfig */,
+				6E7201B2297FEFAC0412FAA3 /* Pods-DemoNativeNetaloSDK.debug.xcconfig */,
+				181244C93614B532C82C4C80 /* Pods-DemoNativeNetaloSDK.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		E3C5674DA110F9319F03F477 /* Frameworks */ = {
+		A8EA9EB16771D3334433712A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEB1A0ADD010EC403F8A52FF /* Pods_DemoNativeNetaloSDK.framework */,
+				375C142BA379E01DB229D87F /* Pods_DemoNativeNetaloSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,12 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FD3FC5B2786F0C000CB10D8 /* Build configuration list for PBXNativeTarget "DemoNativeNetaloSDK" */;
 			buildPhases = (
-				E1690CB839B41C8957CED5A7 /* [CP] Check Pods Manifest.lock */,
+				9EC05465302FC123DB667106 /* [CP] Check Pods Manifest.lock */,
 				2FD3FC432786F0BC00CB10D8 /* Sources */,
 				2FD3FC442786F0BC00CB10D8 /* Frameworks */,
 				2FD3FC452786F0BC00CB10D8 /* Resources */,
 				2F193EF42787E42800FCA7F7 /* Embed Frameworks */,
-				853E5149FBB6B90F7239351A /* [CP] Embed Pods Frameworks */,
+				4E468C8B1FD564716B1BED3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,7 +190,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		853E5149FBB6B90F7239351A /* [CP] Embed Pods Frameworks */ = {
+		4E468C8B1FD564716B1BED3C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,7 +207,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1690CB839B41C8957CED5A7 /* [CP] Check Pods Manifest.lock */ = {
+		9EC05465302FC123DB667106 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,9 +385,12 @@
 		};
 		2FD3FC5C2786F0C000CB10D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 525059D61618C7E0099C2CDE /* Pods-DemoNativeNetaloSDK.debug.xcconfig */;
+			baseConfigurationReference = 6E7201B2297FEFAC0412FAA3 /* Pods-DemoNativeNetaloSDK.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DemoNativeNetaloSDK/Resources/DemoNativeNetaloSDK.entitlements;
@@ -434,9 +429,12 @@
 		};
 		2FD3FC5D2786F0C000CB10D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C39F83252F5BFD3D57FCB33A /* Pods-DemoNativeNetaloSDK.release.xcconfig */;
+			baseConfigurationReference = 181244C93614B532C82C4C80 /* Pods-DemoNativeNetaloSDK.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DemoNativeNetaloSDK/Resources/DemoNativeNetaloSDK.entitlements;
