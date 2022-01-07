@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FD3FC4B2786F0BC00CB10D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3FC4A2786F0BC00CB10D8 /* AppDelegate.swift */; };
+		2FD3FC4F2786F0BC00CB10D8 /* DemoSDKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3FC4E2786F0BC00CB10D8 /* DemoSDKVC.swift */; };
+		2FD3FC572786F0C000CB10D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3FC552786F0C000CB10D8 /* LaunchScreen.storyboard */; };
+		2FD3FC622786F27E00CB10D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3FC5F2786F27D00CB10D8 /* InfoPlist.strings */; };
+		2FD3FC642786F2D200CB10D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3FC632786F2D200CB10D8 /* Assets.xcassets */; };
+		2FD3FC692786F2F700CB10D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3FC662786F2F700CB10D8 /* GoogleService-Info.plist */; };
+		2FD3FC6B2786F2F700CB10D8 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3FC682786F2F700CB10D8 /* BuildConfig.swift */; };
+		41032C454A72736C0287F7BF /* Pods_DemoNativeNetaloSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB1A0ADD010EC403F8A52FF /* Pods_DemoNativeNetaloSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F193EF42787E42800FCA7F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2FD3FC472786F0BC00CB10D8 /* DemoNativeNetaloSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoNativeNetaloSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD3FC4A2786F0BC00CB10D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FD3FC4E2786F0BC00CB10D8 /* DemoSDKVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSDKVC.swift; sourceTree = "<group>"; };
+		2FD3FC562786F0C000CB10D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FD3FC602786F27D00CB10D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FD3FC612786F27D00CB10D8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FD3FC632786F2D200CB10D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FD3FC662786F2F700CB10D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2FD3FC672786F2F700CB10D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD3FC682786F2F700CB10D8 /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
+		2FD3FC6C2786F4E800CB10D8 /* DemoNativeNetaloSDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoNativeNetaloSDK.entitlements; sourceTree = "<group>"; };
+		525059D61618C7E0099C2CDE /* Pods-DemoNativeNetaloSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoNativeNetaloSDK.debug.xcconfig"; path = "Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		C39F83252F5BFD3D57FCB33A /* Pods-DemoNativeNetaloSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoNativeNetaloSDK.release.xcconfig"; path = "Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK.release.xcconfig"; sourceTree = "<group>"; };
+		DEB1A0ADD010EC403F8A52FF /* Pods_DemoNativeNetaloSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoNativeNetaloSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FD3FC442786F0BC00CB10D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41032C454A72736C0287F7BF /* Pods_DemoNativeNetaloSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F193EF52787E86500FCA7F7 /* SDKs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDKs;
+			sourceTree = "<group>";
+		};
+		2FD3FC3E2786F0BC00CB10D8 = {
+			isa = PBXGroup;
+			children = (
+				2FD3FC492786F0BC00CB10D8 /* DemoNativeNetaloSDK */,
+				2FD3FC482786F0BC00CB10D8 /* Products */,
+				81B0C07B56A2E38A1CCF2DA2 /* Pods */,
+				E3C5674DA110F9319F03F477 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FD3FC482786F0BC00CB10D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FD3FC472786F0BC00CB10D8 /* DemoNativeNetaloSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FD3FC492786F0BC00CB10D8 /* DemoNativeNetaloSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2F193EF52787E86500FCA7F7 /* SDKs */,
+				2FD3FC5E2786F27D00CB10D8 /* Resources */,
+				2FD3FC4A2786F0BC00CB10D8 /* AppDelegate.swift */,
+				2FD3FC4E2786F0BC00CB10D8 /* DemoSDKVC.swift */,
+				2FD3FC552786F0C000CB10D8 /* LaunchScreen.storyboard */,
+			);
+			path = DemoNativeNetaloSDK;
+			sourceTree = "<group>";
+		};
+		2FD3FC5E2786F27D00CB10D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FD3FC6C2786F4E800CB10D8 /* DemoNativeNetaloSDK.entitlements */,
+				2FD3FC682786F2F700CB10D8 /* BuildConfig.swift */,
+				2FD3FC662786F2F700CB10D8 /* GoogleService-Info.plist */,
+				2FD3FC672786F2F700CB10D8 /* Info.plist */,
+				2FD3FC632786F2D200CB10D8 /* Assets.xcassets */,
+				2FD3FC5F2786F27D00CB10D8 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		81B0C07B56A2E38A1CCF2DA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				525059D61618C7E0099C2CDE /* Pods-DemoNativeNetaloSDK.debug.xcconfig */,
+				C39F83252F5BFD3D57FCB33A /* Pods-DemoNativeNetaloSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3C5674DA110F9319F03F477 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEB1A0ADD010EC403F8A52FF /* Pods_DemoNativeNetaloSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FD3FC462786F0BC00CB10D8 /* DemoNativeNetaloSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD3FC5B2786F0C000CB10D8 /* Build configuration list for PBXNativeTarget "DemoNativeNetaloSDK" */;
+			buildPhases = (
+				E1690CB839B41C8957CED5A7 /* [CP] Check Pods Manifest.lock */,
+				2FD3FC432786F0BC00CB10D8 /* Sources */,
+				2FD3FC442786F0BC00CB10D8 /* Frameworks */,
+				2FD3FC452786F0BC00CB10D8 /* Resources */,
+				2F193EF42787E42800FCA7F7 /* Embed Frameworks */,
+				853E5149FBB6B90F7239351A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoNativeNetaloSDK;
+			productName = DemoNativeNetaloSDK;
+			productReference = 2FD3FC472786F0BC00CB10D8 /* DemoNativeNetaloSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FD3FC3F2786F0BC00CB10D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2FD3FC462786F0BC00CB10D8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2FD3FC422786F0BC00CB10D8 /* Build configuration list for PBXProject "DemoNativeNetaloSDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = 2FD3FC3E2786F0BC00CB10D8;
+			productRefGroup = 2FD3FC482786F0BC00CB10D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FD3FC462786F0BC00CB10D8 /* DemoNativeNetaloSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FD3FC452786F0BC00CB10D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD3FC572786F0C000CB10D8 /* LaunchScreen.storyboard in Resources */,
+				2FD3FC622786F27E00CB10D8 /* InfoPlist.strings in Resources */,
+				2FD3FC692786F2F700CB10D8 /* GoogleService-Info.plist in Resources */,
+				2FD3FC642786F2D200CB10D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		853E5149FBB6B90F7239351A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoNativeNetaloSDK/Pods-DemoNativeNetaloSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1690CB839B41C8957CED5A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoNativeNetaloSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FD3FC432786F0BC00CB10D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD3FC6B2786F2F700CB10D8 /* BuildConfig.swift in Sources */,
+				2FD3FC4F2786F0BC00CB10D8 /* DemoSDKVC.swift in Sources */,
+				2FD3FC4B2786F0BC00CB10D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FD3FC552786F0C000CB10D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD3FC562786F0C000CB10D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2FD3FC5F2786F27D00CB10D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD3FC602786F27D00CB10D8 /* en */,
+				2FD3FC612786F27D00CB10D8 /* vi */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FD3FC592786F0C000CB10D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FD3FC5A2786F0C000CB10D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FD3FC5C2786F0C000CB10D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 525059D61618C7E0099C2CDE /* Pods-DemoNativeNetaloSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoNativeNetaloSDK/Resources/DemoNativeNetaloSDK.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P843499K72;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoNativeNetaloSDK/SDK",
+					"$(PROJECT_DIR)/DemoNativeNetaloSDK/SDKs",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoNativeNetaloSDK/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.28;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.netalo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "dev-netalo";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2FD3FC5D2786F0C000CB10D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39F83252F5BFD3D57FCB33A /* Pods-DemoNativeNetaloSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoNativeNetaloSDK/Resources/DemoNativeNetaloSDK.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P843499K72;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoNativeNetaloSDK/SDK",
+					"$(PROJECT_DIR)/DemoNativeNetaloSDK/SDKs",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoNativeNetaloSDK/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.28;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.netalo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "dev-netalo";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FD3FC422786F0BC00CB10D8 /* Build configuration list for PBXProject "DemoNativeNetaloSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD3FC592786F0C000CB10D8 /* Debug */,
+				2FD3FC5A2786F0C000CB10D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FD3FC5B2786F0C000CB10D8 /* Build configuration list for PBXNativeTarget "DemoNativeNetaloSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD3FC5C2786F0C000CB10D8 /* Debug */,
+				2FD3FC5D2786F0C000CB10D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FD3FC3F2786F0BC00CB10D8 /* Project object */;
+}
