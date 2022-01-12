@@ -16,27 +16,41 @@ def rx_swift_pods
     pod 'RxRelay', '~> 6.2.0'
 end
 
+def rx_swift_noti_pods
+    pod 'RxSwift', '~> 6.2.0'
+    pod 'RxCocoa', '~> 6.2.0'
+    pod 'RxRelay', '~> 6.2.0'
+end
+
 def database_pods
   pod 'RealmSwift', '10.12.0'
 end
 
 def language_pods
-  # Localization 2.0
   pod 'Localize-Swift', :git => 'https://github.com/thanhphong-tran/Localize-Swift'
 end
 
 def netalo_pods
   #switch 1 or 2
-  pod 'NetacomSDKs', :git => 'http://github.com/hieunetacom/NetacomSDKs', branch: 'demo/simulator_v1'
-#  pod 'NetacomSDKs', :git => 'http://github.com/hieunetacom/NetacomSDKs', branch: 'demo/device_v1'
+#  pod 'NetacomSDKs', :git => 'http://github.com/hieunetacom/NetacomSDKs', branch: 'demo/simulator_v1'
+  pod 'NetaloSDKs', :git => 'http://gitlab.ecdc.vn/hieubui/NetaloSDKs', branch: 'release3'
+  noti_netalo_pods
+end
+
+def noti_netalo_pods
+  pod 'NotificationSDK', :git => 'http://gitlab.ecdc.vn/hieubui/NotificationSDK', branch: 'dev4'
+end
+
+def support_noti_pods
+  pod 'ZIPFoundation', '~> 0.9'
+  pod 'JitsiMeetSDK', git: 'https://github.com/Netacom-NetAlo/JitsiSDK-iOS.git', branch: 'dev_1.2'
 end
 
 def common_pods
   pod 'MessageKit', :git => 'https://github.com/thanhphong-tran/messagekit'
   pod 'SwiftLinkPreview', :git => 'https://github.com/Netacom-NetAlo/SwiftLinkPreview', branch: 'dev_1.0'
   pod 'Kingfisher', '6.1.1'
-  pod 'JitsiMeetSDK', git: 'https://github.com/Netacom-NetAlo/JitsiSDK-iOS.git', branch: 'dev_1.2'
-  pod 'ZIPFoundation', '~> 0.9'
+  support_noti_pods
 end
 
 def tracking_pods
@@ -47,8 +61,6 @@ def tracking_pods
   pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => "4.3.1"
 end
 
-
-# Secret chat
 def secret_pods
   pod 'SignalCoreKit', git: 'https://github.com/signalapp/SignalCoreKit.git', :commit => 'eea6884e55261bf157ad6054c72c3c51d7788d4c'
   pod 'AxolotlKit', git: 'https://github.com/signalapp/SignalProtocolKit.git', branch: 'master'
@@ -75,7 +87,7 @@ def component_pods
   pod 'Kingfisher', '6.1.1'
 end
 
-
+# ======================================TARGET PODS==========================================
 def app_pods
   resolver
   rx_swift_pods
@@ -89,16 +101,25 @@ def app_pods
   netalo_pods
 end
 
-# ======================================TARGET PODS==========================================
-
 target 'DemoNativeNetaloSDK' do
   app_pods
 end
 
-
-
 # ============================Notification Extension================================
+def app_notification_pods
+  database_pods
+  rx_swift_noti_pods
+  resolver
+  noti_netalo_pods
+  secret_pods
+  socket_pods
+  language_pods
+  support_notification_pods
+end
 
+target 'NotificationExtension' do
+  app_notification_pods
+end
 
 # ============================Share Extension=======================================
 
